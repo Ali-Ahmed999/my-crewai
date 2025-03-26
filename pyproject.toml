@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-abcd = "my_crewai.main:kickoff"
+kickoff = "my_crewai.main:kickoff"
 
 [build-system]
 requires = ["hatchling"]

@@ -6,9 +6,15 @@ class ExampleFlow(Flow):
     def node1(self):
         print("im node one")
         
-    @listen("node1")
+
     def node2(self):
         print("im node two")
+        
+    @listen("node1")
+    def node3(self):
+        print("im node three")
   
 def kickoff():
-    print("hello Ali")
+    print("start app...")
+    flow = ExampleFlow()
+    flow.kickoff()
