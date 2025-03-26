@@ -9,7 +9,9 @@ class ExampleFlow(Flow):
         
     @listen("node1")
     def node2(self):
-        print(f"hello my dear {self.state['name']}")
+        self.state["name"] = "Hafiz Ahmed"
+        self.state["age"] = 20
+        print(f"hello my dear {self.state['name']} my age is {self.state['age']}")
         
    
   
