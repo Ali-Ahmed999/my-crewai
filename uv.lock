@@ -1756,12 +1756,14 @@ source = { editable = "." }
 dependencies = [
     { name = "crewai" },
     { name = "crewai-tools" },
+    { name = "litellm" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "crewai", specifier = ">=0.108.0" },
     { name = "crewai-tools", specifier = ">=0.38.1" },
+    { name = "litellm", specifier = ">=1.60.2" },
 ]
 
 [[package]]
